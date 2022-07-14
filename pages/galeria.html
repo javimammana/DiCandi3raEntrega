@@ -11,6 +11,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/CSS/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navBox fixed-top">
@@ -36,57 +37,147 @@
             <div>
                 <h1 class="encabezado mt-5 text-end px-5">Galeria</h1>
             </div>
-            <div class="col-12 d-flex justify-content-center">
-                <div id="carouselExampleIndicators" class="my-5 carousel slide col-md-10 col-lg-8" data-bs-ride="true">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../assets/img/galeria/foto1.jpg" class="d-block w-100" alt="Racimos de uvas moradas entre hojas otoñales">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/img/galeria/foto2.jpg" class="d-block w-100" alt="Racimo de uvas moradas entre hojas verdes de primavera">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/img/galeria/foto3.jpg" class="d-block w-100" alt="Primerísimo primer plano de copas con vinos vistas desde arriba">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/img/galeria/foto4.jpg" class="d-block w-100" alt="Presentación de botellas de bodega, frente a una pared rústica">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/img/galeria/foto5.jpg" class="d-block w-100" alt="Señorita recolectando uvas del viñedo">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/img/galeria/foto6.jpg" class="d-block w-100" alt="Cajon con cosecha de uvas">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/img/galeria/foto7.jpg" class="d-block w-100" alt="Vista inferior de botellas ornamentación de bodega">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/img/galeria/foto8.jpg" class="d-block w-100" alt="Tractor de bodega DiCandi frente a viñedo">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/img/galeria/foto9.jpg" class="d-block w-100" alt="Perspectiva de parra en viñedo">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+            <div class="col-12 d-flex flex-column justify-content-center">
+                <div class="col-12 d-flex justify-content-center mb-5">
+                    <ul class="col-11 d-flex flex-wrap justify-content-center col-md-10 justify-content-sm-around">
+                        <li class="m-3"><a href="#img1"><img class="mImg" src="../assets/img/galeria/mfoto1.jpg" alt="Racimos de uvas moradas entre hojas otoñales"></a></li>
+                        <li class="m-3"><a href="#img2"><img class="mImg" src="../assets/img/galeria/mfoto2.jpg" alt="Racimo de uvas moradas entre hojas verdes de primavera"></a></li>
+                        <li class="m-3"><a href="#img3"><img class="mImg" src="../assets/img/galeria/mfoto3.jpg" alt="Primerísimo primer plano de copas con vinos vistas desde arriba"></a></li>
+                        <li class="m-3"><a href="#img4"><img class="mImg" src="../assets/img/galeria/mfoto4.jpg" alt="Presentación de botellas de bodega, frente a una pared rústica"></a></li>
+                        <li class="m-3"><a href="#img5"><img class="mImg" src="../assets/img/galeria/mfoto5.jpg" alt="Señorita recolectando uvas del viñedo"></a></li>
+                        <li class="m-3"><a href="#img6"><img class="mImg" src="../assets/img/galeria/mfoto6.jpg" alt="Cajon con cosecha de uvas"></a></li>
+                        <li class="m-3"><a href="#img7"><img class="mImg" src="../assets/img/galeria/mfoto7.jpg" alt="Vista inferior de botellas ornamentación de bodega"></a></li>
+                        <li class="m-3"><a href="#img8"><img class="mImg" src="../assets/img/galeria/mfoto8.jpg" alt="Tractor de bodega DiCandi frente a viñedo"></a></li>
+                        <li class="m-3"><a href="#img9"><img class="mImg" src="../assets/img/galeria/mfoto9.jpg" alt="Perspectiva de parra en viñedo"></a></li>
+                    </ul>
                 </div>
+
+                <div class="ampliacion" id="img1">
+                    <div class="d-flex flex-column align-items-center mt-5 py-5">
+                        <div class="tituloGaleria col-9 col-lg-7 d-flex justify-content-between">
+                            <h3>DiCandi</h3>
+                            <a href="">X</a>
+                        </div>
+                        <div class="imgGaleria col-9 col-lg-7 d-flex align-items-center">
+                            <a href="#img9"><</a>
+                            <a href="#img2"><img src="../assets/img/galeria/foto1.jpg" alt=""></a>
+                            <a href="#img2">></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ampliacion" id="img2">
+                    <div class="d-flex flex-column align-items-center mt-5 py-5">
+                        <div class="tituloGaleria col-9 col-lg-7 d-flex justify-content-between">
+                            <h3>DiCandi</h3>
+                            <a href="">X</a>
+                        </div>
+                        <div class="imgGaleria col-9 col-lg-7 d-flex align-items-center">
+                            <a href="#img1"><</a>
+                            <a href="#img3"><img src="../assets/img/galeria/foto2.jpg" alt=""></a>
+                            <a href="#img3">></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ampliacion" id="img3">
+                    <div class="d-flex flex-column align-items-center mt-5 py-5">
+                        <div class="tituloGaleria col-9 col-lg-7 d-flex justify-content-between">
+                            <h3>DiCandi</h3>
+                            <a href="">X</a>
+                        </div>
+                        <div class="imgGaleria col-9 col-lg-7 d-flex align-items-center">
+                            <a href="#img2"><</a>
+                            <a href="#img4"><img src="../assets/img/galeria/foto3.jpg" alt=""></a>
+                            <a href="#img4">></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ampliacion" id="img4">
+                    <div class="d-flex flex-column align-items-center mt-5 py-5">
+                        <div class="tituloGaleria col-9 col-lg-7 d-flex justify-content-between">
+                            <h3>DiCandi</h3>
+                            <a href="">X</a>
+                        </div>
+                        <div class="imgGaleria col-9 col-lg-7 d-flex align-items-center">
+                            <a href="#img3"><</a>
+                            <a href="#img5"><img src="../assets/img/galeria/foto4.jpg" alt=""></a>
+                            <a href="#img5">></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ampliacion" id="img5">
+                    <div class="d-flex flex-column align-items-center mt-5 py-5">
+                        <div class="tituloGaleria col-9 col-lg-7 d-flex justify-content-between">
+                            <h3>DiCandi</h3>
+                            <a href="">X</a>
+                        </div>
+                        <div class="imgGaleria col-9 col-lg-7 d-flex align-items-center">
+                            <a href="#img4"><</a>
+                            <a href="#img6"><img src="../assets/img/galeria/foto5.jpg" alt=""></a>
+                            <a href="#img6">></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ampliacion" id="img6">
+                    <div class="d-flex flex-column align-items-center mt-5 py-5">
+                        <div class="tituloGaleria col-9 col-lg-7 d-flex justify-content-between">
+                            <h3>DiCandi</h3>
+                            <a href="">X</a>
+                        </div>
+                        <div class="imgGaleria col-9 col-lg-7 d-flex align-items-center">
+                            <a href="#img5"><</a>
+                            <a href="#img7"><img src="../assets/img/galeria/foto6.jpg" alt=""></a>
+                            <a href="#img7">></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ampliacion" id="img7">
+                    <div class="d-flex flex-column align-items-center mt-5 py-5">
+                        <div class="tituloGaleria col-9 col-lg-7 d-flex justify-content-between">
+                            <h3>DiCandi</h3>
+                            <a href="">X</a>
+                        </div>
+                        <div class="imgGaleria col-9 col-lg-7 d-flex align-items-center">
+                            <a href="#img6"><</a>
+                            <a href="#img8"><img src="../assets/img/galeria/foto7.jpg" alt=""></a>
+                            <a href="#img8">></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ampliacion" id="img8">
+                    <div class="d-flex flex-column align-items-center mt-5 py-5">
+                        <div class="tituloGaleria col-9 col-lg-7 d-flex justify-content-between">
+                            <h3>DiCandi</h3>
+                            <a href="">X</a>
+                        </div>
+                        <div class="imgGaleria col-9 col-lg-7 d-flex align-items-center">
+                            <a href="#img7"><</a>
+                            <a href="#img9"><img src="../assets/img/galeria/foto8.jpg" alt=""></a>
+                            <a href="#img9">></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ampliacion" id="img9">
+                    <div class="d-flex flex-column align-items-center mt-5 py-5">
+                        <div class="tituloGaleria col-9 col-lg-7 d-flex justify-content-between">
+                            <h3>DiCandi</h3>
+                            <a href="">X</a>
+                        </div>
+                        <div class="imgGaleria col-9 col-lg-7 d-flex align-items-center">
+                            <a href="#img8"><</a>
+                            <a href="#img1"><img src="../assets/img/galeria/foto9.jpg" alt=""></a>
+                            <a href="#img1">></a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>
@@ -108,6 +199,11 @@
             <h6 class="py-0 m-0 text-center text-lg-start px-lg-4">&copy; 2022 Mammana Javier, todos los derechos reservados.-</h6>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

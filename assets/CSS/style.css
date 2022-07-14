@@ -180,6 +180,54 @@
   border: 2px solid #F3F2EE;
 }
 
+.mImg {
+  transition: all 0.5s;
+}
+
+.mImg:hover {
+  transform: scale(1.1);
+}
+
+.ampliacion {
+  display: none;
+}
+
+.ampliacion:target {
+  display: block;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.tituloGaleria h3 {
+  color: rgba(243, 242, 238, 0.6666666667);
+}
+.tituloGaleria a {
+  position: relative;
+  color: rgba(243, 242, 238, 0.6666666667);
+  text-decoration: none;
+  top: 10px;
+  font-size: 20px;
+}
+
+.imgGaleria {
+  height: 80%;
+}
+.imgGaleria a {
+  font-size: 50px;
+  color: #F3F2EE;
+  text-decoration: none;
+  margin: 0px 5px;
+}
+.imgGaleria img {
+  max-width: 100%;
+  border: 7px solid #F3F2EE;
+}
+
 .cardClass {
   background-color: rgba(243, 242, 238, 0.4470588235);
   transition: all 0.5s;
@@ -205,14 +253,12 @@
   .navBar label {
     display: none;
   }
-
   .navBar ul {
     margin-top: 3px;
     display: flex;
     flex-direction: row;
     justify-content: end;
   }
-
   .encabezado {
     font-size: 100px;
   }
